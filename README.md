@@ -46,3 +46,8 @@ You can also specify to have more than one equation to be plotted.
 
 7. You should also rename the function to something more specific at the very top and save the file as the new name. (e.g. function diodeEduTool) 
 ~                                           
+
+Some samples of what can be done with this:
+[[https://github.com/montagao/MATSimTool/blob/master/NMOSSS.png|alt=NMOS Sim tool]]
+[[https://github.com/montagao/MATSimTool/blob/master/RLCSS.png|alt=RLC sim tool]]
+[[https://github.com/montagao/MATSimTool/blob/master/templateSS.png|alt=Blank Template File ]]
