@@ -1,0 +1,44 @@
+Tool setup
+
+You should only need to modify the beginning "USER SETUP" portion of the MATLAB function file.
+There should be comments to guide you through the setup, but in case anything is unclear:
+
+1. Enter the values of all properties of the plot, e.g. title, legend labels, x-y labels
+
+2. Add the filename of the PNG of your figure's image. The image should be in PNG format with a transparent background
+for best results. Works best with 7:3 aspect ratio images.
+
+3. Define the constants and variables in their respective arrays. For constants, we need only define the name in one array, and the constant value
+in the matching array index in c_values. For variables, for each variable name you must also define the value limits in the corresponding row in the 'v_lims' matrix.
+Note that if the limits are of 3 or more orders of magnitude apart, then the slider will increment logarithmically. This can be adjusted in the "LabelSlider.m" function file.
+
+e.g. 
+
+c_names = cellstr(char('Constant1', 'Constant2'));
+c_values = [1 50];
+
+v_names = cellstr(char('X Slider','V1' ));
+v_lims = [ 0.1 50; 1 50  ];
+
+
+
+If the 'XScale' variable is set to true, then the first variable modifies the max x-value displayed on the plot.
+
+4. Specify the function x-range and y-range to display. If no 'y_lim' array is specified, then it will scale automatically.
+
+5. User functions: (the only real work you have to do)
+You must define a function file which outputs an array of y values to be plotted, using the 'v_values' and 'c_values' and x values as arguments.
+
+An example function declaration would be 
+
+	function v = diodeeqn( x, v_values, c_values)
+	end
+
+Save this file as a MATLAB function file and specify it in the 'user_fns' variable like so:
+	user_fns = (@diodeeqn);
+
+You can also specify to have more than one equation to be plotted.
+
+6. Lastly you can add additional information about the specific concept being explained in the 'info' variable.
+
+7. You should also rename the function to something more specific at the very top and save the file as the new name. (e.g. function diodeEduTool) 
