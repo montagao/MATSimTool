@@ -48,6 +48,6 @@ You can also specify to have more than one equation to be plotted.
 ~                                           
 
 Some samples of what can be done with this:
-[[https://github.com/montagao/MATSimTool/blob/master/NMOSSS.png|alt=NMOS Sim tool]]
-[[https://github.com/montagao/MATSimTool/blob/master/RLCSS.png|alt=RLC sim tool]]
-[[https://github.com/montagao/MATSimTool/blob/master/templateSS.png|alt=Blank Template File ]]
+![alt NMOS](https://github.com/montagao/MATSimTool/blob/master/NMOSSS.png)
+![alt RLC](https://github.com/montagao/MATSimTool/blob/master/RLCSS.png)
+![alt template](https://github.com/montagao/MATSimTool/blob/master/templateSS.png)
